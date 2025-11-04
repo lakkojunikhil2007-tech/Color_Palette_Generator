@@ -26,7 +26,8 @@ Built using **HTML, CSS, and JavaScript**.
 > Replace these links with your actual images:
 
 ### 🎛️ Main UI  
-![Main UI](main-ui.png)
+<img width="1882" height="983" alt="Screenshot 2025-11-04 091242" src="https://github.com/user-attachments/assets/275409da-3211-4a13-be63-7eb9524da7a1" />
+
 
 ---
 
