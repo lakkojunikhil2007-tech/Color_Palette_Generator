@@ -1,0 +1,234 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: gray;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    color: white;
+}
+
+/* ✅ Title */
+h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+/* ✅ Responsive Palette Grid */
+.palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+/* ✅ Color Boxes + pop-in animation */
+.color-box {
+    height: 130px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: popIn 0.6s ease forwards;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+@keyframes popIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ✅ Stylish Gradient Button */
+#generateBtn {
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #00d2ff, #3a47d5);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#generateBtn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeIn 1s ease forwards;
+}
+/* (Keep everything from before, just ADD this below) */
+
+/* ✅ Favorites Section */
+.favorites {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+/* ✅ Small palette preview card */
+.favorite-card {
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.favorite-card:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ Small color boxes inside favorites */
+.small-color {
+    height: 35px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+/* ✅ Delete button */
+.delete-btn {
+    background: #ff4d4d;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.delete-btn:hover {
+    background: #d93636;
+}
+
+/* ✅ Save button styling */
+#saveBtn {
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #ffb347, #ffcc33);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+#saveBtn:hover {
+    transform: scale(1.08);
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ✅ Mobile adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .color-box {
+        height: 110px;
+        font-size: 16px;
+    }
+
+    #generateBtn {
+        width: 80%;
+        font-size: 18px;
+    }
+}
+
+/* (Keep everything from before, just ADD this below) */
+
+/* ✅ Favorites Section */
+.favorites {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+/* ✅ Small palette preview card */
+.favorite-card {
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.favorite-card:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ Small color boxes inside favorites */
+.small-color {
+    height: 35px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+/* ✅ Delete button */
+.delete-btn {
+    background: #ff4d4d;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.delete-btn:hover {
+    background: #d93636;
+}
+
+/* ✅ Save button styling */
+#saveBtn {
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #ffb347, #ffcc33);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+#saveBtn:hover {
+    transform: scale(1.08);
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
